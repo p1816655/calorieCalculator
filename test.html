@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Styling-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+
+    <title>MAD CA1</title>
+
+</head>
+
+<!--BMR Calculator-->
+<h1>Basal Metabolic Rate (BMR) Calculator</h1>
+
+<h2>BMR is the amount of calories that your body needs just to function. <br>
+    Use the BMR calculator to calculate your BMR.
+</h2>
+
+<!--Input-->
+<div class = "inputtable">
+
+<!--Input Form Validation-->
+<form id = "validateForm" method = "post" onsubmit = "return false">
+
+    <!--Input Table-->
+    <table id = "input1">
+
+        <tbody>
+            <!--Age-->
+            <tr>
+                <td>Age: </td>
+                <td>
+                    <input id = "age" type = "text" name="age" required>
+                </td>
+            </tr>
+            <!--Gender-->
+            <tr>
+                <td>Gender: </td>
+
+                <td>
+                <form id = "genderoption" method = "post" oninput = "return false">
+                    <input id = "male" type="radio" name="gender" value="male" required> Male
+                    <input id = "female" type="radio" name="gender" value="female" required> Female
+                </form>
+                </td>
+
+            </tr>
+            <!--Height-->
+            <tr>
+                <td>Height: </td>
+                <td>
+                    <input id = "height" type = "text" name = "height" required>
+                    <span>cm</span>
+                </td>
+            </tr>
+            <!--Weight-->
+            <tr>
+                <td>Weight: </td>
+                <td>
+                    <input id = "weight" type = "text" name = "weight" required>
+                    <span>kg</span>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <!--End of Input Table-->
+
+    <br>
+
+    <!--Calculate button-->
+    <input type = "submit" value = "Calculate" id="calculatebmr">
+    <h3 id = "bmrresult"></h3>
+
+</form>
+<!--End of Input Form Validation-->
+
+</div>
+<!--End of input and BMR Calculator-->
+
+<hr>
+
+<!--Calorie Calculator-->
+<h1>Calorie Calculator</h1>
+
+<h2>Assuming you eat one item per meal. please select a food option and a quantity option.</h2>
+
+<!-- Breakfast -->
+<button class="accordion">Breakfast</button>
+
+  <div class="panel">
+    
+  <select id="breakfast">
+      <option value="Apple">Apple</option>
+      <option value="Banana">Banana</option>
+      <option value="Grape">Grape</option>
+      <option value="Mango">Mango</option>
+      <option value="Orange">Orange</option>
+      <option value="Pear">Pear</option>
+      <option value="Peach">Peach</option>
+      <option value="Pineapple">Pineapple</option>
+      <option value="Strawberry">Strawberry</option>
+      <option value="Watermelon">Watermelon</option>
+      <option value="Asparagus">Asparagus</option>
+      <option value="Beancurd">Beancurd</option>
+      <option value="Broccoli">Broccoli</option>
+      <option value="Carrots">Carrots</option>
+      <option value="Cucumber">Cucumber</option>
+      <option value="Eggplant">Eggplant</option>
+      <option value="Lettuce">Lettuce</option>
+      <option value="Tomato">Tomato</option>
+      <option value="Beef, regular, cooked">Beef, regular, cooked</option>
+      <option value="Chicken, cooked">Chicken, cooked</option>
+      <option value="Egg">Egg</option>
+      <option value="Fish, Catfish, cooked">Fish, Catfish, cooked</option>
+      <option value="Pork, cooked">Pork, cooked</option>
+      <option value="Shrimp, cooked">Shrimp, cooked</option>
+      <option value="Bread, regular">Bread, regular</option>
+      <option value="Butter">Butter</option>
+      <option value="Caesar Salad">Caesar Salad</option>
+      <option value="Cheeseburger">Cheeseburger</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Corn">Corn</option>
+      <option value="Hamburger">Hamburger</option>
+      <option value="Pizza">Pizza</option>
+      <option value="Potato (uncooked)">Potato (uncooked)</option>
+      <option value="Rice, cooked">Rice, cooked</option>
+      <option value="Sandwich">Sandwich</option>
+      <option value="Beer, regular">Beer, regular</option>
+      <option value="Coca-Cola Classic">Coca-Cola Classic</option>
+      <option value="Diet Coke">Diet Coke</option>
+      <option value="Milk, low-fat (1%)">Milk, low-fat (1%)</option>
+      <option value="Milk, low-fat (2%)">Milk, low-fat (2%)</option>
+      <option value="Milk, whole">Milk, whole</option>
+      <option value="Orange Juice / Apple Cider">Orange Juice / Apple Cider</option>
+      <option value="Yogurt, low-fat">Yogurt, low-fat</option>
+      <option value="Yogurt, non-fat">Yogurt, non-fat</option>
+  </select> 
+   
+  <select id="breakquan">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+  </select>
+
+  </div>
+
+<!-- Lunch -->
+<button class="accordion">Lunch</button>
+
+  <div class="panel">
+
+  <select id="lunch">
+    <option value="Apple">Apple</option>
+      <option value="Banana">Banana</option>
+      <option value="Grape">Grape</option>
+      <option value="Mango">Mango</option>
+      <option value="Orange">Orange</option>
+      <option value="Pear">Pear</option>
+      <option value="Peach">Peach</option>
+      <option value="Pineapple">Pineapple</option>
+      <option value="Strawberry">Strawberry</option>
+      <option value="Watermelon">Watermelon</option>
+      <option value="Asparagus">Asparagus</option>
+      <option value="Beancurd">Beancurd</option>
+      <option value="Broccoli">Broccoli</option>
+      <option value="Carrots">Carrots</option>
+      <option value="Cucumber">Cucumber</option>
+      <option value="Eggplant">Eggplant</option>
+      <option value="Lettuce">Lettuce</option>
+      <option value="Tomato">Tomato</option>
+      <option value="Beef, regular, cooked">Beef, regular, cooked</option>
+      <option value="Chicken, cooked">Chicken, cooked</option>
+      <option value="Egg">Egg</option>
+      <option value="Fish, Catfish, cooked">Fish, Catfish, cooked</option>
+      <option value="Pork, cooked">Pork, cooked</option>
+      <option value="Shrimp, cooked">Shrimp, cooked</option>
+      <option value="Bread, regular">Bread, regular</option>
+      <option value="Butter">Butter</option>
+      <option value="Caesar Salad">Caesar Salad</option>
+      <option value="Cheeseburger">Cheeseburger</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Corn">Corn</option>
+      <option value="Hamburger">Hamburger</option>
+      <option value="Pizza">Pizza</option>
+      <option value="Potato (uncooked)">Potato (uncooked)</option>
+      <option value="Rice, cooked">Rice, cooked</option>
+      <option value="Sandwich">Sandwich</option>
+      <option value="Beer, regular">Beer, regular</option>
+      <option value="Coca-Cola Classic">Coca-Cola Classic</option>
+      <option value="Diet Coke">Diet Coke</option>
+      <option value="Milk, low-fat (1%)">Milk, low-fat (1%)</option>
+      <option value="Milk, low-fat (2%)">Milk, low-fat (2%)</option>
+      <option value="Milk, whole">Milk, whole</option>
+      <option value="Orange Juice / Apple Cider">Orange Juice / Apple Cider</option>
+      <option value="Yogurt, low-fat">Yogurt, low-fat</option>
+      <option value="Yogurt, non-fat">Yogurt, non-fat</option>
+  </select>
+
+  <select id="lunchquan">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+
+  </div>
+
+<!-- Dinner -->
+<button class="accordion">Dinner</button>
+
+  <div class="panel">
+
+  <select id="dinner">
+    <option value="Apple">Apple</option>
+      <option value="Banana">Banana</option>
+      <option value="Grape">Grape</option>
+      <option value="Mango">Mango</option>
+      <option value="Orange">Orange</option>
+      <option value="Pear">Pear</option>
+      <option value="Peach">Peach</option>
+      <option value="Pineapple">Pineapple</option>
+      <option value="Strawberry">Strawberry</option>
+      <option value="Watermelon">Watermelon</option>
+      <option value="Asparagus">Asparagus</option>
+      <option value="Beancurd">Beancurd</option>
+      <option value="Broccoli">Broccoli</option>
+      <option value="Carrots">Carrots</option>
+      <option value="Cucumber">Cucumber</option>
+      <option value="Eggplant">Eggplant</option>
+      <option value="Lettuce">Lettuce</option>
+      <option value="Tomato">Tomato</option>
+      <option value="Beef, regular, cooked">Beef, regular, cooked</option>
+      <option value="Chicken, cooked">Chicken, cooked</option>
+      <option value="Egg">Egg</option>
+      <option value="Fish, Catfish, cooked">Fish, Catfish, cooked</option>
+      <option value="Pork, cooked">Pork, cooked</option>
+      <option value="Shrimp, cooked">Shrimp, cooked</option>
+      <option value="Bread, regular">Bread, regular</option>
+      <option value="Butter">Butter</option>
+      <option value="Caesar Salad">Caesar Salad</option>
+      <option value="Cheeseburger">Cheeseburger</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Corn">Corn</option>
+      <option value="Hamburger">Hamburger</option>
+      <option value="Pizza">Pizza</option>
+      <option value="Potato (uncooked)">Potato (uncooked)</option>
+      <option value="Rice, cooked">Rice, cooked</option>
+      <option value="Sandwich">Sandwich</option>
+      <option value="Beer, regular">Beer, regular</option>
+      <option value="Coca-Cola Classic">Coca-Cola Classic</option>
+      <option value="Diet Coke">Diet Coke</option>
+      <option value="Milk, low-fat (1%)">Milk, low-fat (1%)</option>
+      <option value="Milk, low-fat (2%)">Milk, low-fat (2%)</option>
+      <option value="Milk, whole">Milk, whole</option>
+      <option value="Orange Juice / Apple Cider">Orange Juice / Apple Cider</option>
+      <option value="Yogurt, low-fat">Yogurt, low-fat</option>
+      <option value="Yogurt, non-fat">Yogurt, non-fat</option>
+  </select> 
+
+  <select id="dinquan">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+
+  </div>
+
+  <br>
+
+  <!-- Total calorie intake button -->
+  <input type= "submit" value= "Total Calorie Intake" id="totalcalories">
+  <h3 id="CalorieResult"></h3>
+
+<!--End of Calorie Calculator-->
+
+<hr>
+
+<h1>Information</h1>
+<h2>Total calorie intake is LESS than your BMR: INCREASE your total calorie intake until it is the same as your BMR.
+    <br><br>
+    Total calorie intake is MORE than your BMR: DECREASE your total calorie intake until it is the same as your BMR.
+    <br><br>
+    Total calorie intake is the SAME your BMR: total calorie intake is enough for your body to function normally.
+</h2>
+
+<!--JavaScript-->
+<script src="script.js"></script>
+
+</body>
+
+</html>

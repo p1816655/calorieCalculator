@@ -1,0 +1,105 @@
+/*Background*/
+body {
+
+    background-image: url("fruits.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2, h3{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    text-align: center; 
+}
+
+/*Input boxes style*/
+input[type=text] {
+    padding: 7px 20px;
+}
+
+input[type=submit] {
+    padding: 5px 10px;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#validateForm {
+    display: table;
+    margin: auto;
+}
+
+td{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#calculatebmr{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 120px;
+}
+/*end of input style*/
+
+/*Calorie Calculator styles*/
+
+/*accordion*/
+.accordion {
+    background-color: #F7E7DE;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #FFB500;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/*end of accordtion*/
+
+/*Select options*/
+select {
+    border: none;
+    padding: 3px 4px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    width: 49.6%;
+}
+
+#addFood, #showFood{
+    border: none;
+    padding: 4.5px 6px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    width: 18.5%;
+}
+
+/*Total Calories button*/
+#totalcalories {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 550px;
+}
